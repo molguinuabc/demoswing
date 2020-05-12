@@ -10,6 +10,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BoxLayout;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -39,8 +40,9 @@ public class DemoGUIMenuSwing {
         panelSuperior.add(etiqueta);
         JTextField comando = new JTextField("ingresa comando",40);
         panelSuperior.add(comando);
-        ventana.add(panelSuperior);
-        
+        JButton botonComando = new JButton("Ejecutar");
+        panelSuperior.add(botonComando);
+        ventana.add(panelSuperior); 
         JScrollPane sp = new JScrollPane();
         JTextArea areaDeTexto = new JTextArea("Soy el area de texto");
         areaDeTexto.setPreferredSize(new Dimension(800,600));
